@@ -1,0 +1,235 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_main} rnr-wrapper rnr-cbw-main">
+
+{BEGIN container_main}
+<div class="rnr-c rnr-cv rnr-c-main">
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}
+<div class="rnr-c rnr-cv rnr-c-view">
+
+{BEGIN viewheader}
+<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	<h1>{$pagetitlelabel promociones view}</h1>
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields {$brickclass_viewfields}"><table class="fieldGrid">
+	{BEGIN imagen_fieldblock}
+<tr class="{$fielddispclass_imagen}" data-fieldname="imagen">
+	<td class="rnr-label">
+		{$label promociones imagen}
+	</td>
+	<td class="rnr-control style3">
+		{$imagen_value}&nbsp;
+	</td>
+</tr>
+{END imagen_fieldblock}
+	{BEGIN ruta_fieldblock}
+<tr class="{$fielddispclass_ruta}" data-fieldname="ruta">
+	<td class="rnr-label">
+		{$label promociones ruta}
+	</td>
+	<td class="rnr-control style3">
+		{$ruta_value}&nbsp;
+	</td>
+</tr>
+{END ruta_fieldblock}
+	{BEGIN promocion_fieldblock}
+<tr class="{$fielddispclass_promocion}" data-fieldname="promocion">
+	<td class="rnr-label">
+		{$label promociones promocion}
+	</td>
+	<td class="rnr-control style3">
+		{$promocion_value}&nbsp;
+	</td>
+</tr>
+{END promocion_fieldblock}
+	{BEGIN leyenda_fieldblock}
+<tr class="{$fielddispclass_leyenda}" data-fieldname="leyenda">
+	<td class="rnr-label">
+		{$label promociones leyenda}
+	</td>
+	<td class="rnr-control style3">
+		{$leyenda_value}&nbsp;
+	</td>
+</tr>
+{END leyenda_fieldblock}
+	{BEGIN moneda_fieldblock}
+<tr class="{$fielddispclass_moneda}" data-fieldname="moneda">
+	<td class="rnr-label">
+		{$label promociones moneda}
+	</td>
+	<td class="rnr-control style3">
+		{$moneda_value}&nbsp;
+	</td>
+</tr>
+{END moneda_fieldblock}
+	{BEGIN precio_fieldblock}
+<tr class="{$fielddispclass_precio}" data-fieldname="precio">
+	<td class="rnr-label">
+		{$label promociones precio}
+	</td>
+	<td class="rnr-control style3">
+		{$precio_value}&nbsp;
+	</td>
+</tr>
+{END precio_fieldblock}
+	{BEGIN detalles_fieldblock}
+<tr class="{$fielddispclass_detalles}" data-fieldname="detalles">
+	<td class="rnr-label">
+		{$label promociones detalles}
+	</td>
+	<td class="rnr-control style3">
+		{$detalles_value}&nbsp;
+	</td>
+</tr>
+{END detalles_fieldblock}
+	{BEGIN intervalo_fieldblock}
+<tr class="{$fielddispclass_intervalo}" data-fieldname="intervalo">
+	<td class="rnr-label">
+		{$label promociones intervalo}
+	</td>
+	<td class="rnr-control style3">
+		{$intervalo_value}&nbsp;
+	</td>
+</tr>
+{END intervalo_fieldblock}
+	{BEGIN destino_fieldblock}
+<tr class="{$fielddispclass_destino}" data-fieldname="destino">
+	<td class="rnr-label">
+		{$label promociones destino}
+	</td>
+	<td class="rnr-control style3">
+		{$destino_value}&nbsp;
+	</td>
+</tr>
+{END destino_fieldblock}
+	{BEGIN zona_fieldblock}
+<tr class="{$fielddispclass_zona}" data-fieldname="zona">
+	<td class="rnr-label">
+		{$label promociones zona}
+	</td>
+	<td class="rnr-control style3">
+		{$zona_value}&nbsp;
+	</td>
+</tr>
+{END zona_fieldblock}
+	{BEGIN estado_fieldblock}
+<tr class="{$fielddispclass_estado}" data-fieldname="estado">
+	<td class="rnr-label">
+		{$label promociones estado}
+	</td>
+	<td class="rnr-control style3">
+		{$estado_value}&nbsp;
+	</td>
+</tr>
+{END estado_fieldblock}
+</table></div>
+
+
+{BEGIN viewbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}
+<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}
+<a href="#" class="rnr-button {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Volver a la lista</a>
+{END back_button}
+{BEGIN close_button}
+<a href="#" class="rnr-button" {$closebutton_attrs}>Cerrar ventana</a>
+{END close_button}
+{BEGIN edit_page_button}
+<a href="#" class="rnr-button" {$edit_page_button_attrs}>Editar</a>
+{END edit_page_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+</div>
+{END container_main}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>
