@@ -16,5 +16,7 @@ if ($connection->connect_errno) {
 $connection->close();
 
 echo "hola que tal luis,.....asdjflkjasdkjfklajsd.";
-var_dump($_ENV);
+
+var_dump(getenv());
+
 ?>
