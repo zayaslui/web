@@ -1,0 +1,4 @@
+oc get pods
+
+oc rsh yourpods
+
