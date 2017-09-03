@@ -31,6 +31,35 @@
 		return self::create_menu_servicios($servicios);
 		}
 
+		public static function consulta($conexion){
+			$servicios = array();
+
+			if(isset($conexion)){
+				try {
+					include_once "MenuServicios.inc.php";
+					/*acomodar las columnas al objeto que no cohincide*/
+					$sql = "select *from zonas";
+					$sentencia = $conexion -> prepare($sql);
+					$sentencia -> execute();
+
+					$resultado = $sentencia -> fetchAll();					
+
+					if(count($resultado)){
+						print "hay resultado";
+					}else{
+						print "no hay resultados";
+					}
+
+				} catch (PDOException $e) {
+				print "ERROR ".$e -> getMessage();					
+				}
+			}else{
+				print "no hay conexion";
+			}
+		return $resultado;
+		}
+
+
 		private function create_menu_servicios($servicios){
 			$html = '';
 

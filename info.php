@@ -11,6 +11,6 @@
 // echo RepositorioGaleria::obtener_galeria(Conexion::obtener_conexion());
 // echo RepositorioGaleria::obtener_galeria_zona_disponibles(Conexion::obtener_conexion());
 
-echo RepositorioMenuServicios::obtener_menu_servicios(Conexion::obtener_conexion());
+echo RepositorioMenuServicios::consulta(Conexion::obtener_conexion());
 
 ?>
