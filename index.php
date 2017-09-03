@@ -1,5 +1,5 @@
 <?php
-
+echo "si no funciona es una mierda";
 
 $dbhost = getenv("MYSQL_SERVICE_HOST");
 
