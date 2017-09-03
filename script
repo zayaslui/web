@@ -1,4 +1,6 @@
+//obtener pods
 oc get pods
-
+//conectarse a un pod
 oc rsh yourpods
-
+//copiar archivo al pod
+oc rsync <directorio> <mysql_pod_name>:/var/lib/mysql/data

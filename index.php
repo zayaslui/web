@@ -1,34 +1,25 @@
-<?php
-echo "si no funciona es una mierda";
+<?php 
 
-$dbhost = getenv("MYSQL_SERVICE_HOST");
+	$_SESSION['session'] = 'index'; 
 
-$dbport = getenv("MYSQL_SERVICE_PORT");
+	include('header.php');
 
-$dbuser = getenv("MYSQL_USER");
+	// -include('banner_text.php');
+	// -include('flexslider.php');
 
-$dbpwd = getenv("MYSQL_PASSWORD");
+	include('layerslider.php');	
+	include('today.php');
 
-$dbname = getenv("MYSQL_DATABASE");
+	// -include('bienvenida.php');
+	 // -include('sitios.php');
 
-echo $dbport;
-echo $dbuser;
-echo $dbpwd;
-echo $dbname;
-var_dump($_ENV);
+	include('promociones.php');
 
+	// -include('servicios.php');
 
-$connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
-if ($connection->connect_errno) {
-    printf("Connect failed: %s\n", $mysqli->connect_error);
-    exit();
-} else {
-    printf("Connected to the database");
-}
-$connection->close();
-
-echo "hola que tal luis,.....asdjflkjasdkjfklajsd.";
-
-// var_dump(getenv());
-
+	include('servicios2.php');
+	include('boletin.php');
+	include('facebook.php');
+	include('footer.php');
+	include('javascript.php');
 ?>

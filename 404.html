@@ -1,0 +1,112 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+  <link rel="mask-icon" type="" href="https://production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+  <meta name="robots" content="noindex">
+  <title>CodePen - Static404</title>
+  <script src="js/jquery-2.2.3.min.js"></script> 
+  
+  
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+
+  
+      <style>
+      html, body {
+  width: 100%;
+  min-height: 100%;
+  background: black;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+canvas {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  cursor: move;
+}
+
+    </style>
+
+  
+  
+  
+  
+</head>
+
+<body translate="no">
+
+  <canvas id="canv" width="600" height="400"></canvas>
+<!-- 
+Mouseover | TouchSwipe to intensify effect. 
+!-->
+    <script>
+    var vibracion = {
+      init:function(){
+        var c = document.getElementById('canv');
+        var _ = c.getContext('2d');
+        c.width = 600; c.height = 400; 
+        var ms = false;
+        var w = 0, h = 0;
+        
+        var img = new Image();
+        img.src = 'images/404.png'; 
+        var set = function(){
+          var run, _h, _w, dx, a;
+          w = img.width;
+          h = img.height;
+          _.translate(50, 50);
+          a = 30;
+          dx = 0;
+          _w = w + 50;
+          _h = h + 50;
+          return (run = function() {
+            var inc, i, j;
+            _.clearRect(-a, -a, _w, _h);
+            inc = ms === true ? 0.5 : 0.18;
+            for (j=0; j <= h; i = 0 <= h ? ++j : --j) {
+              dx = ~~(inc * (Math.random() - 0.5) * a);
+              _.drawImage(img, 0, i, w, 1, dx, i, w, 1);
+            }
+            window.requestAnimationFrame(run);
+          })();
+        };
+          ////////////////
+        img.onload = function(){
+          return set();
+        };
+        c.addEventListener('mouseover', function(){
+          return ms = true;
+        }, false);
+        c.addEventListener('touchmove',function(e){
+          e.preventDefault();
+          return ms = true;
+        }, false);
+        c.addEventListener('mouseout', function(){
+          return ms = false;
+        }, false);
+        c.addEventListener('touchend',function(){
+          return ms = false;
+        }, false);
+
+      }
+    }
+    $(document).ready(function(){
+      vibracion.init();
+    })
+
+  </script>
+
+  
+  
+
+
+
+ </body></html>

@@ -1,0 +1,61 @@
+<div {$pageattrs}>
+
+{BEGIN container_masterlistheader}
+<div class="rnr-c rnr-ch rnr-c-masterlistheader">
+
+
+<div  class="style1 rnr-bl rnr-b-masterlistheader {$brickclass_masterlistheader}">	<h1>{$pagetitlelabel promociones masterlist}</h1>
+</div>
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_masterlistheader}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table class="rnr-c rnr-cont rnr-c-mastergrid rnr-b-mastergridfields rnr-gridtable" cellpadding="0" >
+	<thead>
+		<tr class="rnr-toprow style1 {$gridHeader_class}" >
+			<th class="{$imagen_class}">{$label promociones imagen}</th>
+			<th class="{$ruta_class}">{$label promociones ruta}</th>
+			<th class="{$promocion_class}">{$label promociones promocion}</th>
+			<th class="{$leyenda_class}">{$label promociones leyenda}</th>
+			<th class="{$moneda_class}">{$label promociones moneda}</th>
+			<th class="{$precio_class}">{$label promociones precio}</th>
+			<th class="{$detalles_class}">{$label promociones detalles}</th>
+			<th class="{$intervalo_class}">{$label promociones intervalo}</th>
+			<th class="{$destino_class}">{$label promociones destino}</th>
+			<th class="{$zona_class}">{$label promociones zona}</th>
+			<th class="{$estado_class}">{$label promociones estado}</th>
+			<th class="rnr-edge">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="rnr-row style1">
+			<td class="{$imagen_class}">{$imagen_mastervalue}</td>
+			<td class="{$ruta_class}">{$ruta_mastervalue}</td>
+			<td class="{$promocion_class}">{$promocion_mastervalue}</td>
+			<td class="{$leyenda_class}">{$leyenda_mastervalue}</td>
+			<td class="{$moneda_class}">{$moneda_mastervalue}</td>
+			<td class="{$precio_class}">{$precio_mastervalue}</td>
+			<td class="{$detalles_class}">{$detalles_mastervalue}</td>
+			<td class="{$intervalo_class}">{$intervalo_mastervalue}</td>
+			<td class="{$destino_class}">{$destino_mastervalue}</td>
+			<td class="{$zona_class}">{$zona_mastervalue}</td>
+			<td class="{$estado_class}">{$estado_mastervalue}</td>
+			<td class="rnr-edge">&nbsp;</td>
+		</tr>
+	</tbody>
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>
