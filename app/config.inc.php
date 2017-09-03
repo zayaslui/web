@@ -6,10 +6,10 @@
 		// $config['password'] = $_ENV['OPENSHIFT_MYSQL_DB_PASSWORD'];
 		// $config['nombre_base_datos'] = $_ENV['OPENSHIFT_APP_NAME'];
 
-		$config['nombre_servidor'] = getenv("OPENSHIFT_MYSQL_DB_HOST");
-		$config['nombre_usuario'] = getenv("OPENSHIFT_MYSQL_DB_USERNAME");
-		$config['password'] = getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
-		$config['nombre_base_datos'] = getenv("OPENSHIFT_APP_NAME");		
+		$config['nombre_servidor'] = $_ENV["MYSQL_SERVICE_HOST"];
+		$config['nombre_usuario'] = 'root';
+		$config['password'] = 'admin';
+		$config['nombre_base_datos'] = 'turismo';		
 	
 	}else{
 		$config['nombre_servidor'] = 'localhost';
