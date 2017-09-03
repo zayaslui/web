@@ -15,7 +15,7 @@ echo $dbport;
 echo $dbuser;
 echo $dbpwd;
 echo $dbname;
-
+var_dump($_ENV);
 
 
 $connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
