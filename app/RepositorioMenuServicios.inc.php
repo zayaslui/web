@@ -36,6 +36,7 @@
 
 			if(isset($conexion)){
 				try {
+					
 					include_once "MenuServicios.inc.php";
 					/*acomodar las columnas al objeto que no cohincide*/
 					$sql = "select *from zonas";

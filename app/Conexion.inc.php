@@ -29,6 +29,11 @@
 		public static function obtener_conexion(){
 			return self::$conexion;
 		}
+		public static function testing(){
+			if(isset(self::$conexion)){
+				echo "conxion exitosa";
+			}	
+		}
 	}
 
 ?>
