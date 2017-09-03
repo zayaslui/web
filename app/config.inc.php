@@ -13,7 +13,7 @@
 	}
 
 
-	// echo var_dump($config);
+	echo var_dump($config);
 	// echo "-----------------------------------------------------------------------------";
 	// echo var_dump($_ENV);
 
