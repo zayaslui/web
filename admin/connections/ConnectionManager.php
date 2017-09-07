@@ -233,11 +233,18 @@ class ConnectionManager
 
 		$connectionsData = array();
 		if($_ENV){
-			$host=$_ENV['OPENSHIFT_MYSQL_DB_HOST'];
-			$user=$_ENV['OPENSHIFT_MYSQL_DB_USERNAME'];
-			$pwd=$_ENV['OPENSHIFT_MYSQL_DB_PASSWORD'];
+
+			$host='turismo.turismo.svc';
+			$user='admin';
+			$pwd='root';
 			$port=$_ENV['OPENSHIFT_MYSQL_DB_PORT'];
-			$sys_dbname=$_ENV['OPENSHIFT_APP_NAME'];			
+			$sys_dbname='turismo';
+
+			// $host=$_ENV['OPENSHIFT_MYSQL_DB_HOST'];
+			// $user=$_ENV['OPENSHIFT_MYSQL_DB_USERNAME'];
+			// $pwd=$_ENV['OPENSHIFT_MYSQL_DB_PASSWORD'];
+			// $port=$_ENV['OPENSHIFT_MYSQL_DB_PORT'];
+			// $sys_dbname=$_ENV['OPENSHIFT_APP_NAME'];						
 		}else{
 			$host="localhost";
 			$user="root";
