@@ -237,7 +237,6 @@ class ConnectionManager
 			$host='turismo.turismo.svc';
 			$user='admin';
 			$pwd='root';
-			$port=$_ENV['OPENSHIFT_MYSQL_DB_PORT'];
 			$sys_dbname='turismo';
 
 			// $host=$_ENV['OPENSHIFT_MYSQL_DB_HOST'];

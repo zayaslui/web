@@ -32,7 +32,9 @@
 		public static function testing(){
 			if(isset(self::$conexion)){
 				echo "conxion exitosa";
-			}	
+			}else{
+				echo "no hay conexion";
+			}
 		}
 	}
 
