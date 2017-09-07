@@ -19,8 +19,8 @@
 		$config['nombre_base_datos'] = 'turismo';
 	}	
 
-	echo "probando";
-	
+	echo "probando...";
+
 	$dbhost = getenv("MYSQL_SERVICE_HOST");
 	$dbport = getenv("MYSQL_SERVICE_PORT");
 	$dbuser = getenv("MYSQL_USER");
