@@ -18,6 +18,6 @@
 		$config['password'] = 'admin';	
 		$config['nombre_base_datos'] = 'turismo';
 	}	
-
+var_dump($_ENV);
 
 ?>
