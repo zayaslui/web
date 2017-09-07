@@ -42,7 +42,7 @@
 
 
 <!--- //albums --> 
-<div class="container">
+<div class="container adds_principal">
 	<?php
 		echo RepositorioImagenesPromociones::obtener_imagen_promocion(Conexion::obtener_conexion(),$_SESSION['sitio']);
 

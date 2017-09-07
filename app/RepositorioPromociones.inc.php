@@ -64,7 +64,9 @@ class RepositorioPromociones{
 		}
 		//crear el html
 		//echo count($promociones);
+		//promocion con detalles
 		//return self::createPromocion($promociones);
+		//promocion sin detalles
 		return self::createPromocionSimple($promociones);		
 
 	}
@@ -99,6 +101,7 @@ class RepositorioPromociones{
 			// echo "no hay conexion";
 		}
 		//crear el html
+
 		//echo count($promociones);
 		return self::createdetalles($promociones);
 	}
@@ -234,9 +237,11 @@ class RepositorioPromociones{
 		foreach ($promociones as $value) {
 		//para los efectos
 		if ($contador%2==0){
-			$class='wow_promocion wow bounceInLeft';
+			//$class='wow_promocion wow bounceInLeft';
+			$class='wow_promocion wow fadeInLeft';			
 		}else{
-			$class='wow_promocion wow bounceInRight';
+			//$class='wow_promocion wow bounceInRight';
+			$class='wow_promocion wow fadeInRight';			
 		}
 		$html .= '<div class="col-xs-12 col-sm-3 col-md-3 '.$class.'" data-row-offset="100">
 					<div class="package-box">
@@ -248,8 +253,6 @@ class RepositorioPromociones{
 				        <!-- cambia -->
 					    	<h4 class="blue">'.$value->obtener_leyenda().'</h4 class="blue">
 					    </div>
-
-
 						
 					    <div class="info">
 					        <div class="row">

@@ -19,4 +19,8 @@ echo "<br>";
 	$resultado = $sentencia -> fetchAll();
 
 	var_dump($resultado);
+
+
+
+	echo $MYSQL_USER;
 ?>
