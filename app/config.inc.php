@@ -22,10 +22,10 @@ error_reporting(E_ALL);
 
 	echo "probando...";
 
-	$dbhost = 'turismo.turismo.svc';
-	$dbuser = 'admin';
-	$dbpwd = 'root';
-	$dbname = 'turismo';
+	$dbhost = getenv(strtoupper(getenv("DATABASE_SERVICE_NAME"))."_SERVICE_HOST");
+	$dbuser =  getenv("DATABASE_USER");
+	$dbpwd = getenv("DATABASE_PASSWORD");
+	$dbname = getenv("DATABASE_NAME");
 	$connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 	if ($connection->connect_errno) {
 	    printf("Connect failed: %s\n", $mysqli->connect_error);
