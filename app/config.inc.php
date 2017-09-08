@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 		// $config['password'] = $_ENV['OPENSHIFT_MYSQL_DB_PASSWORD'];
 		// $config['nombre_base_datos'] = $_ENV['OPENSHIFT_APP_NAME'];
 		//version 3
-		$config['nombre_servidor'] = 'turismo.turismo.svc';
+		$config['nombre_servidor'] = 'mysql.turismo.svc';
 		$config['nombre_usuario'] = 'admin';
 		$config['password'] = 'root';
 		$config['nombre_base_datos'] = 'turismo';		
@@ -19,22 +19,6 @@ error_reporting(E_ALL);
 		$config['password'] = 'admin';	
 		$config['nombre_base_datos'] = 'turismo';
 	}	
-
-	echo "probando... conexion";
-
-	$dbhost = getenv(strtoupper(getenv("DATABASE_SERVICE_NAME"))."_SERVICE_HOST");
-	$dbuser =  getenv("DATABASE_USER");
-	$dbpwd = getenv("DATABASE_PASSWORD");
-	$dbname = getenv("DATABASE_NAME");
-	$connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
-	if ($connection->connect_errno) {
-	    printf("Connect failed: %s\n", $mysqli->connect_error);
-	    exit();
-	} else {
-	    printf("conexion exitosa");
-	}
-
-	$connection->close();
 
 
 ?>
