@@ -38,7 +38,7 @@
 			return $html;
 		}
 
-		private function create_info_html_encabezado($empresa){
+		public static function create_info_html_encabezado($empresa){
 				$html ='';
 				foreach ($empresa as $key => $value) {
 					$html .= '			<a href="#" class="dato">
