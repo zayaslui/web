@@ -30,7 +30,7 @@
 	    printf("Connect failed: %s\n", $mysqli->connect_error);
 	    exit();
 	} else {
-	    printf("Connected to the database");
+	    printf("conexion exitosa");
 	}
 
 	$connection->close();
