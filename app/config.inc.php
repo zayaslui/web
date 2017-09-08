@@ -20,7 +20,7 @@ error_reporting(E_ALL);
 		$config['nombre_base_datos'] = 'turismo';
 	}	
 
-	echo "probando...";
+	echo "probando... conexion";
 
 	$dbhost = getenv(strtoupper(getenv("DATABASE_SERVICE_NAME"))."_SERVICE_HOST");
 	$dbuser =  getenv("DATABASE_USER");
