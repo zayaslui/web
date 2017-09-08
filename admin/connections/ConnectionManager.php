@@ -234,7 +234,7 @@ class ConnectionManager
 		$connectionsData = array();
 		if($_ENV){
 
-			$host='turismo.turismo.svc';
+			$host='mysql.turismo.svc';
 			$user='admin';
 			$pwd='root';
 			$sys_dbname='turismo';
