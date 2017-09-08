@@ -38,7 +38,7 @@
 			return $html;
 		}
 
-		public static function create_info_html_encabezado($empresa){
+		private function create_info_html_encabezado($empresa){
 				$html ='';
 				foreach ($empresa as $key => $value) {
 					$html .= '			<a href="#" class="dato">
@@ -80,19 +80,24 @@
 				switch ($tipo) {
 					case 'encabezado':
 						if(count($empresa)){
-							return self::create_info_html_encabezado($empresa);
+							$html = self::create_info_html_encabezado($empresa) 
+							return $html;
 						}else{
-							return self::create_info_html_encabezado_default();
+							$html = self::create_info_html_encabezado_default(); 
+							return $html;
 						}
 					break;
 					case 'footer':
 						if(count($empresa)){
-							return self::create_info_html_footer($empresa);
+							$html = self::create_info_html_footer($empresa) 
+							return $html;
 						}else{
-							return self::create_info_html_footer_default();
+							$html = self::create_info_html_footer_default() 
+							return $html;
 						}
 					case 'leyenda':
-						return self::create_leyenda($empresa);		
+						$html = self::create_leyenda($empresa); 
+						return $html;		
 				default:
 						return $html = '<strom> no hay datos</strom>';
 					break;
