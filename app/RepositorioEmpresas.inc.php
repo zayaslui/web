@@ -92,7 +92,7 @@
 							$html = self::create_info_html_footer($empresa);
 							return $html;
 						}else{
-							$html = self::create_info_html_footer_default():
+							$html = self::create_info_html_footer_default();
 							return $html;
 						}
 					case 'leyenda':
