@@ -28,7 +28,7 @@
 			return $empresa;
 		}
 
-		private function create_info_html_encabezado_default(){
+		public static function create_info_html_encabezado_default(){
 			$html = '';
 			$html = '			<a href="#" class="dato">
 				<i class="fa fa-phone wow pulse" data-wow-iteration="infinite" data-wow-duration="1500ms"> (021)666.666/6</i>
@@ -38,7 +38,7 @@
 			return $html;
 		}
 
-		private function create_info_html_encabezado($empresa){
+		public static function create_info_html_encabezado($empresa){
 				$html ='';
 				foreach ($empresa as $key => $value) {
 					$html .= '			<a href="#" class="dato">
@@ -51,7 +51,7 @@
 				return $html;
 			
 		}
-		private function create_info_html_footer($empresa){
+		public static function create_info_html_footer($empresa){
 			$html = '				<h3>Contacto Info</h3>
 				<ul>';		
 			foreach ($empresa as $key => $value) {
@@ -65,7 +65,7 @@
 
 			return $html;
 		}
-		private function create_info_html_footer_default(){
+		public static function create_info_html_footer_default(){
 			$html = '				<h3>Contacto Info</h3>
 				<ul>
 					<li>Direccion</li> 
@@ -80,24 +80,19 @@
 				switch ($tipo) {
 					case 'encabezado':
 						if(count($empresa)){
-							$html = self::create_info_html_encabezado($empresa);
-							return $html;
+							return self::create_info_html_encabezado($empresa);
 						}else{
-							$html = self::create_info_html_encabezado_default(); 
-							return $html;
+							return self::create_info_html_encabezado_default();
 						}
 					break;
 					case 'footer':
 						if(count($empresa)){
-							$html = self::create_info_html_footer($empresa);
-							return $html;
+							return self::create_info_html_footer($empresa);
 						}else{
-							$html = self::create_info_html_footer_default();
-							return $html;
+							return self::create_info_html_footer_default();
 						}
 					case 'leyenda':
-						$html = self::create_leyenda($empresa); 
-						return $html;		
+						return self::create_leyenda($empresa);		
 				default:
 						return $html = '<strom> no hay datos</strom>';
 					break;
