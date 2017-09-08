@@ -80,7 +80,7 @@
 				switch ($tipo) {
 					case 'encabezado':
 						if(count($empresa)){
-							$html = self::create_info_html_encabezado($empresa) 
+							$html = self::create_info_html_encabezado($empresa);
 							return $html;
 						}else{
 							$html = self::create_info_html_encabezado_default(); 
