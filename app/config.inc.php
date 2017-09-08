@@ -6,6 +6,7 @@
 		// $config['nombre_usuario'] = $_ENV['OPENSHIFT_MYSQL_DB_USERNAME'];
 		// $config['password'] = $_ENV['OPENSHIFT_MYSQL_DB_PASSWORD'];
 		// $config['nombre_base_datos'] = $_ENV['OPENSHIFT_APP_NAME'];
+		
 		//version 3
 		$config['nombre_servidor'] = 'mysql.turismo.svc';
 		$config['nombre_usuario'] = 'admin';
