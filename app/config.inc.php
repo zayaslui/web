@@ -22,7 +22,7 @@
 	echo "probando...";
 
 	$dbhost = 'turismo.turismo.svc';
-	$dbuser = 'admin'
+	$dbuser = 'admin';
 	$dbpwd = 'root';
 	$dbname = 'turismo';
 	$connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
