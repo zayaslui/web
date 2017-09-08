@@ -1,5 +1,6 @@
 <?php
-	error_reporting(E_ALL & ~(E_STRICT|E_NOTICE));
+	error_reporting(E_ALL ^ E_NOTICE);
+
 	include_once "app/Conexion.inc.php";
 	include_once "app/RepositorioEmpresas.inc.php";
 	Conexion::abrir_conexion();
