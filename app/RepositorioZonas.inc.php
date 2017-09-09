@@ -37,7 +37,7 @@ class RepositorioZonas{
 		return self::createListaZona($zonas);		
 	}
 
-	private function createListaZona($zonas){
+	public static function createListaZona($zonas){
 		$html = '
 		<div class="destinos2">
     		<ul class="nav nav-list simplefilter">

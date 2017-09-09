@@ -32,7 +32,7 @@ class RepositorioGaleria{
 		}
 		return self::create_contenedor_imagenes($galeria);
 	}
-	private function not_found_img(){
+	public static function not_found_img(){
 		$html = '';
 		$html .= '<div class="no_found">
 					<div class="alert alert-danger " role="alert">
@@ -42,7 +42,7 @@ class RepositorioGaleria{
 				</div>';
 		return $html;
 	}
-	private function create_contenedor_imagenes($galeria){
+	public static function create_contenedor_imagenes($galeria){
 		$html='			<div class="filtr-container">';
 		foreach ($galeria as $key => $value) {
 
@@ -95,7 +95,7 @@ class RepositorioGaleria{
 		}
 		return self::obtener_lista_html($galeria);
 	}
-	private function not_found_img_with_zona(){
+	public static function not_found_img_with_zona(){
 		$html = '';
 		$html .= '<div class="no_found">
 					<div class="alert alert-danger " role="alert">
@@ -105,7 +105,7 @@ class RepositorioGaleria{
 				</div>';
 		return $html;
 	}
-	private function obtener_lista_html($galerias){
+	public static function obtener_lista_html($galerias){
 		$html='';
 		$html.='
 			<ul class="simplefilter">

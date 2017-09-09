@@ -61,7 +61,7 @@
 		}
 
 
-		private function create_menu_servicios($servicios){
+		public static function create_menu_servicios($servicios){
 			$html = '';
 
 			$html .= '<div id="tit_" class="container">
