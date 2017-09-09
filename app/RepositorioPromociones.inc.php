@@ -229,7 +229,7 @@ class RepositorioPromociones{
 		return $html;
 	}
 
-	private function createPromocionSimple($promociones){
+	public static function createPromocionSimple($promociones){
 		$html ="";
 		$contador=0;
 		$class="";

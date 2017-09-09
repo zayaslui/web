@@ -1,6 +1,6 @@
 <?php
 class RepositorioZonas{
-	public function obtener_zonas_promociones($conexion){
+	public static function obtener_zonas_promociones($conexion){
 		$zonas = array();
 
 		if(isset($conexion)){
