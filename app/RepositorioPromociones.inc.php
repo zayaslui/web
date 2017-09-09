@@ -107,7 +107,7 @@ class RepositorioPromociones{
 	}
 
 
-	private function createDetalles($promociones){
+	public static function createDetalles($promociones){
 
 		$html="";
 

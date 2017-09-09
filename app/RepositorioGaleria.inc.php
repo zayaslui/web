@@ -71,9 +71,13 @@ class RepositorioGaleria{
 			try {
 				include_once "Galerias.inc.php";
 				/*acomodar las columnas al objeto que no cohincide*/
-				$sql = "select b.zona as zona, a.descripcion as nombre_zona, b.imagen as imagen, titulo 
+				$sql = "select 
+						b.zona as zona, 
+						a.descripcion as nombre_zona, 
+						b.imagen as imagen, titulo 
 						from zonas a 
-						inner join galerias b on b.zona=a.zona group by nombre_zona";
+						inner join galerias b on b.zona=a.zona 
+						group by b.zona,a.descripcion,b.imagen";
 				$sentencia = $conexion -> prepare($sql);
 				$sentencia -> execute();
 
