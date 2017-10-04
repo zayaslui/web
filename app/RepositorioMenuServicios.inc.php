@@ -48,7 +48,8 @@
 					if(count($resultado)){
 						print "hay resultado";
 					}else{
-						print "no hay resultados";
+						//print "no hay resultados";
+						return "no hay resultados";
 					}
 
 				} catch (PDOException $e) {
@@ -72,7 +73,8 @@
 					<div class="container color_grid contenedor_grid">
 					<section id="grid" class="grid clearfix container-fluid">';
 			foreach ($servicios as $key => $value) {
-				$img = 'admin/'.str_replace('\/','/',str_replace('"','',explode(",", explode(":", $value -> obtener_imagen())[1])[0]));
+				$img = 'admin/';
+				//.str_replace('\/','/',str_replace('"','',explode(",", explode(":", $value -> obtener_imagen())[1])[0]));
 				$html .= '
 				<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" class="wow fadeInLeft col-md-3 col-xs-12 col-sm-12" data-row-offset="100">
 						<figure>

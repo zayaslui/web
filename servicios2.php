@@ -2,7 +2,7 @@
 	include_once "app/Conexion.inc.php";
 	include_once "app/RepositorioMenuServicios.inc.php";
 	Conexion::abrir_conexion();
-	echo RepositorioMenuServicios::obtener_menu_servicios(Conexion::obtener_conexion());
+	RepositorioMenuServicios::obtener_menu_servicios(Conexion::obtener_conexion());
 ?>
 
 <!-- <div id="tit_" class="container">
